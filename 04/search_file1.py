@@ -8,4 +8,4 @@ def search(dir, name):
             if os.access(dir + i, os.R_OK):
                 search(dir + i + '/', name)
 
-search('/', 'book')
+search('C:/book/', 'book')

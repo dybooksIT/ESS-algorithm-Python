@@ -13,21 +13,21 @@ maze = [
     [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9]
 ]
 
-# スタート位置(x座標、y座標、移動回数)をセット
+# 시작 위치(x좌표、y좌표、이동 횟수)를 설정
 pos = [[1, 1, 0]]
 
 while len(pos) > 0:
     x, y, depth = pos.pop(0)
 
-    # ゴールに着くと終了
+    # 골에 도달하면 종료
     if maze[x][y] == 1:
         print(depth)
         break
 
-    # 探索済みとしてセット
+    # 탐색 완료로 설정
     maze[x][y] = 2
 
-    #上下左右を探索
+    # 상하좌우 탐색
     if maze[x - 1][y] < 2:
         pos.append([x - 1, y, depth + 1])
     if maze[x + 1][y] < 2:

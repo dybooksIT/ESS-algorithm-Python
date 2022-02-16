@@ -14,15 +14,15 @@ maze = [
 ]
 
 def search(x, y, depth):
-    # ゴールに着くと終了
+    # 골에 도달하면 종료
     if maze[x][y] == 1:
         print(depth)
         exit()
 
-    # 探索済みとしてセット
+    # 탐색 완료로 설정
     maze[x][y] = 2
 
-    #上下左右を探索
+    # 상하좌우 탐색
     if maze[x - 1][y] < 2:
         search(x - 1, y, depth + 1)
     if maze[x + 1][y] < 2:
@@ -32,8 +32,8 @@ def search(x, y, depth):
     if maze[x][y + 1] < 2:
         search(x, y + 1, depth + 1)
 
-    # 探索前に戻す
+    # 탐색 전으로 되돌리기
     maze[x][y] = 0
 
-# スタート位置から開始
+# 시작 위치에서 출발
 search(1, 1, 0)

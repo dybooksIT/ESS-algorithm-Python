@@ -1,20 +1,20 @@
 N = 8
 
-# 斜めのチェック
+# 대각선 확인
 def check(x, col):
-    # 配置済みの行を逆順に調べる
+    # 배치 완료된 행을 반대 순서로 탐색
     for i, row in enumerate(reversed(col)):
         if (x + i + 1 == row) or (x - i - 1 == row):
             return False
     return True
 
 def search(col):
-    if len(col) == N: # すべて配置できれば出力
+    if len(col) == N: # 전부 배치되면 출력
         print(col)
         return
 
     for i in range(N):
-        if i not in col: # 同じ行は使わない
+        if i not in col: # 동일한 행은 사용하지 않음
             if check(i, col):
                 col.append(i)
                 search(col)

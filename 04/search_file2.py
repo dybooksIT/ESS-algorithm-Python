@@ -1,6 +1,6 @@
 import os
 
-queue = ['/']
+queue = ['C:/book/']
 
 while len(queue) > 0:
     dir = queue.pop()
