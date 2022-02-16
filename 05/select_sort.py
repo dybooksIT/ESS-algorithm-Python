@@ -6,7 +6,7 @@ for i in range(len(data)):
         if data[min] > data[j]:
             min = j
 
-    # 最小値の位置と現在の要素を交換
+    # 최솟값의 위치에 현재의 요소를 교환
     data[i], data[min] = data[min], data[i]
 
 print(data)
