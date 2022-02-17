@@ -16,12 +16,12 @@ def dijkstra(edges, num_v):
     q = [[0, 0]]
 
     while len(q) > 0:
-        # キューから最小の要素を取り出し
+        # 큐에서 최소인 요소를 꺼내기
         q[0], q[-1] = q[-1], q[0]
         _, u = q.pop()
-        # キューを再構成
+        # 큐를 재구성
         min_heapify(q, 0)
-        # 各辺に対してコストを調べる
+        # 각 변의 비용을 탐색
         for i in edges[u]:
             if dist[i[0]] > dist[u] + i[1]:
                 dist[i[0]] = dist[u] + i[1]
@@ -42,4 +42,5 @@ edges = [
     [[4, 1], [6, 4]],
     []
 ]
+
 print(dijkstra(edges, 7))

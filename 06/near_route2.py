@@ -2,7 +2,7 @@ import functools
 
 M, N = 6, 5
 
-# Pythonでは以下の1行を追加するだけで再帰処理をメモ化できる
+# 파이썬에서는 아래 1행만 추가하면 재귀 처리를 메모이제이션(memoization)할 수 있음
 @functools.lru_cache(maxsize = None)
 def search(m, n):
     if (m == 0) or (n == 0):

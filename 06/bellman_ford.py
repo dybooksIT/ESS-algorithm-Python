@@ -7,16 +7,17 @@ def bellman_ford(edges, num_v):
         changed = False
         for edge in edges:
             if dist[edge[1]] > dist[edge[0]] + edge[2]:
-                # 頂点までのコストが更新できれば更新
+                # 정점까지의 비용을 갱신할 수 있으면 갱신
                 dist[edge[1]] = dist[edge[0]] + edge[2]
                 changed = True
 
     return dist
 
-# 辺のリスト（起点、終点、コストのリスト）
+# 변의 리스트(출발점, 끝점, 비용의 리스트)
 edges = [
     [0, 1, 4], [0, 2, 3], [1, 2, 1], [1, 3, 1],
     [1, 4, 5], [2, 5, 2], [4, 6, 2], [5, 4, 1],
     [5, 6, 4]
 ]
+
 print(bellman_ford(edges, 7))
