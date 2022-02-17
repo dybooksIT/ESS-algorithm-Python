@@ -12,11 +12,12 @@ def heapify(data, i):
         heapify(data, min)
 
 data = [6, 15, 4, 2, 8, 5, 11, 9, 7, 13]
-# ヒープを構成
+
+# 힙 구성
 for i in reversed(range(len(data) // 2)):
     heapify(data, i)
 
-# ソートを実行
+# 정렬 실행
 sorted_data = []
 for _ in range(len(data)):
     data[0], data[-1] = data[-1], data[0]

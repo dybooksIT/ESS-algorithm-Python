@@ -5,10 +5,10 @@ def merge_sort(data):
         return data
 
     mid = len(data) // 2
-    # 再帰的に分割
+    # 재귀적으로 분할
     left = merge_sort(data[:mid])
     right = merge_sort(data[mid:])
-    # 結合
+    # 병합
     return merge(left, right)
 
 def merge(left, right):
@@ -23,7 +23,7 @@ def merge(left, right):
             result.append(right[j])
             j += 1
 
-    # 残りをまとめて追加
+    # 나머지 데이터를 정리해서 추가
     if i < len(left):
         result.extend(left[i:])
     if j < len(right):
