@@ -1,5 +1,5 @@
-text = list('SHOEISHA SESHOP')
-pattern = list('SHA')
+text = list('DYITBOOK DYSHOP')
+pattern = list('DYS')
 
 skip = {}
 for i in range(len(pattern) - 1):

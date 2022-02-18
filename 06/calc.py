@@ -1,26 +1,26 @@
 def calc(expression):
     stack = []
     for i in expression.split(' '):
-        # 現在のスタックの内容を表示
+        # 현재 스택의 내용을 표시
         print(stack)
         if i == '+':
-            # +のときはスタックから2つ取り出して加算し、再度格納する
+            # +의 경우 스택에서 요소 두 개를 꺼내 더한 뒤 다시 저장
             b, a = stack.pop(), stack.pop()
             stack.append(a + b)
         elif i == '-':
-            # -のときはスタックから2つ取り出して減算し、再度格納する
+            # -의 경우 스택에서 요소 두 개를 꺼내 뺀 뒤 다시 저장
             b, a = stack.pop(), stack.pop()
             stack.append(a - b)
         elif i == '*':
-            # *のときはスタックから2つ取り出して乗算し、再度格納する
+            # *의 경우 스택에서 요소 두 개를 꺼내 곱한 뒤 다시 저장
             b, a = stack.pop(), stack.pop()
             stack.append(a * b)
         elif i == '/':
-            # *のときはスタックから2つ取り出して除算し、再度格納する
+            # *의 경우 스택에서 요소 두 개를 꺼내 나눈 뒤 다시 저장
             b, a = stack.pop(), stack.pop()
             stack.append(a // b)
         else:
-            # 演算子以外（数字）のときはその値を格納する
+            # 연산자 이외(숫자)인 경우 그 값을 저장
             stack.append(int(i))
     return stack[0]
 
