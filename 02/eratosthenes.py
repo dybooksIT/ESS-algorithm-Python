@@ -1,4 +1,5 @@
 import math
+import time
 
 def get_prime(n):
     if n <= 1:
@@ -16,3 +17,8 @@ def get_prime(n):
     return prime + data
 
 print(get_prime(200))
+
+start = time.time()
+get_prime(100000)
+end = time.time()
+print(f"{end - start:.5f} sec")
