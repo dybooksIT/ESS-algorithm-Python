@@ -1,5 +1,7 @@
 url_list = [
-    'https://masuipeo.com/',
-    'https://www.shoeisha.co.jp',
-    'https://seshop.com'
+    'https://archmond.net',
+    'https://www.dongyangbooks.co.kr',
+    'http://m.dongyangbooks.com'
 ]
+
+print(url_list)
