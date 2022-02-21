@@ -3,6 +3,7 @@ def calc(expression):
     for i in expression.split(' '):
         # 현재 스택의 내용을 표시
         print(stack)
+
         if i == '+':
             # +의 경우 스택에서 요소 두 개를 꺼내 더한 뒤 다시 저장
             b, a = stack.pop(), stack.pop()

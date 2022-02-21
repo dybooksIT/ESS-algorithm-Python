@@ -1,7 +1,7 @@
 text = list('DYITBOOK DYSHOP')
 pattern = list('DYS')
-
 skip = {}
+
 for i in range(len(pattern) - 1):
     skip[pattern[i]] = len(pattern) - i - 1
 

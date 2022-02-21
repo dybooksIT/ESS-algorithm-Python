@@ -10,6 +10,7 @@ def dijkstra(edges, num_v, goal):
         # 힙에서 요소 꺼내기
         _, u = heapq.heappop(q)
         last = u[-1]
+
         if last == goal:
             return u
         for i in edges[last]:
