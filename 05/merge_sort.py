@@ -5,9 +5,11 @@ def merge_sort(data):
         return data
 
     mid = len(data) // 2
+
     # 재귀적으로 분할
     left = merge_sort(data[:mid])
     right = merge_sort(data[mid:])
+
     # 병합
     return merge(left, right)
 
