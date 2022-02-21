@@ -1,8 +1,8 @@
 data = '000000111111100111000000001111'
-
 flag = 0
 count = 0
 result = []
+
 for i in list(data):
     if int(i) == flag:
         count += 1

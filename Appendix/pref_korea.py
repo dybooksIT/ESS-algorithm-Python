@@ -10,6 +10,7 @@ pref = [
 ]
 
 min_total = 0
+
 def search(total, pos):
     global min_total
     if pos >= len(pref):

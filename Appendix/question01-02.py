@@ -1,4 +1,5 @@
 a = [3]
+
 def calc(a):
     a[0] += 4
     return a
