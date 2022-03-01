@@ -5,7 +5,7 @@ def pi(n):
     plus_minus = -1
 
     for i in range(1, n):
-        result += plus_minus * 4 / (i * 2 - 1)
+        result += plus_minus * 4 / (i * 2 + 1)
         # 부호를 반전
         plus_minus *= -1
 
