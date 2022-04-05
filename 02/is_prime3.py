@@ -16,5 +16,6 @@ def is_prime_time(n):
 start = time.time()
 is_prime_time(100000)
 end = time.time()
+
 print('\n')
 print(f"{end - start:.5f} sec")
