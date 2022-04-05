@@ -5,6 +5,7 @@ def fibonacci(n):
         return memo[n]
 
     memo[n] = fibonacci(n - 2) + fibonacci(n - 1)
+
     return memo[n]
 
 print(fibonacci(8))
