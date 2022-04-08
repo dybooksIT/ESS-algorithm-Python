@@ -16,7 +16,6 @@ def dijkstra(edges, num_v):
             if dist[i[0]] > dist[u] + i[1]:
                 # 정점까지의 비용을 갱신할 수 있다면 갱신하기
                 dist[i[0]] = dist[u] + i[1]
-
     return dist
 
 # 변의 리스트(끝점과 비용의 리스트)

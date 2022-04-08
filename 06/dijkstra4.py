@@ -18,7 +18,6 @@ def dijkstra(edges, num_v, goal):
                 # 정점까지의 비용을 갱신할 수 있다면 갱신해 힙에 등록
                 dist[i[0]] = dist[last] + i[1]
                 heapq.heappush(q, [dist[last] + i[1], u + [i[0]]])
-
     return []
 
 # 변의 리스트(끝점과 비용의 리스트)

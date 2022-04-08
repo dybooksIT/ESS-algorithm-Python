@@ -33,7 +33,6 @@ def dijkstra(edges, num_v):
                 while (j > 0) and (q[(j - 1) // 2] > q[j]):
                     q[(j - 1) // 2], q[j] = q[j], q[(j - 1) // 2]
                     j = (j - 1) // 2
-
     return dist
 
 edges = [
