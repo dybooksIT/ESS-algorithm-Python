@@ -38,7 +38,6 @@ def search(total, pos):
                 break
         break
 
-
 search(0, 0)
 print(min_total)
 print(pref[local_index1])
