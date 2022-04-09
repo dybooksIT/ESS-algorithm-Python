@@ -9,8 +9,13 @@ pref = [
     506494, 489202
 ]
 
+# 500만 명에 가까운 인구 수
 min_total = 0
+
+# 두 지역의 인구 수를 저장하는 임시 변수
 local_temp = 0
+
+# 지역 1~3 인구 수의 인덱스를 저장
 local_index1 = 0
 local_index2 = 0
 local_index3 = 0
