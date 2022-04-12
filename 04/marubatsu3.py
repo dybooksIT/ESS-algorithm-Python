@@ -1,9 +1,7 @@
 import random
 
-goal = [
-    0b111000000, 0b000111000, 0b000000111, 0b100100100,
-    0b010010010, 0b001001001, 0b100010001, 0b001010100
-]
+goal = [0b111000000, 0b000111000, 0b000000111, 0b100100100,
+        0b010010010, 0b001001001, 0b100010001, 0b001010100]
 
 # ○나 × 3개가 나열되었는지를 판정
 def check(player):
@@ -25,7 +23,6 @@ def minmax(p1, p2, turn):
         return 0
 
     w = [i for i in range(9) if (board & (1 << i)) == 0]
-
     if turn:
         return min([minmax(p2, p1 | (1 << i), not turn) for i in w])
     else:
