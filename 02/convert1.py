@@ -1,4 +1,5 @@
 n = 18
+
 result = ''
 
 while n > 0:

@@ -1,4 +1,5 @@
 n = '10010'
+
 result = 0
 
 for i in range(len(n)):
