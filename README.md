@@ -20,3 +20,6 @@
 
 ## 예제 파일 실행 방법
 윈도우에서 마이크로소프트의 Visual Studio Code로 예제 파일을 실행하려는 분은 [이곳](https://bit.ly/3MTUieO)을 참고하세요. 윈도우에서 제트브레인의 PyCharm으로 예제 파일을 실행하려는 분은 [이곳](https://bit.ly/3FgWKte)을 참고하세요.
+
+## 기타 사항
+정오표는 [이곳](./readme/errata/errata.md)을 참고하기 바랍니다.
